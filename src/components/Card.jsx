@@ -21,7 +21,7 @@ export default function Card({ movie }){
 {
         isLoading
         ?
-        <div className="cards inline-block relative min-w-[200px] h-[300px] overflow-hidden">
+        <div className="cards inline-block relative min-w-[100px] h-[300px] overflow-hidden">
             <SkeletonTheme color="#202020" highlightColor="#444">
                 <Skeleton height={300} duration={2} />
             </SkeletonTheme>

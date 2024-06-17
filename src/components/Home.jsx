@@ -17,7 +17,10 @@ export default function Home(){
    
     return(
         <>
+        <div className="text-xl font-medium">
         Home page
+        </div>
+      
         <Carousel className="size-full"
             showThumbs={false}
             autoPlay={true}
@@ -29,7 +32,7 @@ export default function Home(){
            
             {popularMovies.map((movie)=>(
               <Link to={`/movie/${movie.id}`} style={{textDecoration:"none",color:"white"}}  >
-              <div className="posterImage w-full  h-full sm:h-[700px]">
+              <div className="posterImage w-full object-contain h-full sm:h-[700px]">
                   <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
               </div>
               <div className="posterImage__overlay text-white p-[2rem]
