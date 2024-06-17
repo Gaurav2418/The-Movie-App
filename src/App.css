@@ -1,0 +1,13 @@
+#root {
+  max-width: 1380px;
+  margin: 0 ;
+
+  /* padding: 2rem; */
+}
+
+@media screen and (max-width: 380px){
+  .posterImage__description{
+    display: none;
+    
+  }
+}

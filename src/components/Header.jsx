@@ -1,0 +1,14 @@
+import { Link } from "react-router-dom"
+
+export default function Header(){
+    return(
+        <>
+        <div className="flex sm:ml-3 space-x-8 text-xl">
+            <Link to="/"><img className=" min-w-[100px] sm:w-[120px] mt-2 cursor-pointer" src="./src/assets/movieLogo.png" alt="Logo" /></Link>
+            <Link  to="/movies/popular" className="flex pt-4">Popular</Link>
+            <Link to="/movies/top_rated" className="flex pt-4">Top Rated</Link>
+            <Link to="/movies/upcoming" className="flex pt-4">Upcoming</Link>
+        </div>
+        </>
+    )
+}
